@@ -1,5 +1,5 @@
 <div align=center>
-# Komolio
+  <h1> Komolio </h1>
 
 <img src='https://github.com/Ivan-Corporation/Komolio/blob/main/2.png'>
 
