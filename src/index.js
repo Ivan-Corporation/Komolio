@@ -9,7 +9,6 @@ import Header from './components/header/header'
 import Footer from './components/footer/footer'
 
 import './index.css';
-import './assets/css/blobz.css';
 
 if(process.env.NODE_ENV=="development"){
   require('dotenv').config()

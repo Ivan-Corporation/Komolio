@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
   faTwitter,
-  faBehanceSquare,
-  faCodepen} from '@fortawesome/free-brands-svg-icons';
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+  faTelegram,
+  faYoutube
+} from '@fortawesome/free-brands-svg-icons';
 
 import './footer.css';
 
@@ -31,8 +31,11 @@ export default function Footer(){
           <a href="https://twitter.com/KomaHuman" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="mailto:hammer.99.ivan@gmail.com" target="_blank">
-            <FontAwesomeIcon icon={faEnvelope} />
+          <a href="https://t.me/KomarIvan" target="_blank">
+            <FontAwesomeIcon icon={faTelegram} />
+          </a>
+          <a href="https://www.youtube.com/channel/UCWj8NJUnyji2xHHThU1TTsw" target="_blank">
+            <FontAwesomeIcon icon={faYoutube} />
           </a>
 
         </div>

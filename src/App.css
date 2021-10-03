@@ -15,8 +15,6 @@ body[data-page="home"] .footer{
 .home {
   width: 100%;
   max-width: 100vw;
-  /* height: calc(100vh - 80px); */
-  /* margin-bottom: 180px; */
 }
 
 .intro {
@@ -83,21 +81,20 @@ body[data-page="home"] .footer{
 }
 
 .red {
-  background: #ed4040;
+  background: #ff8800;
 }
 
 .yellow {
-  background: #ecb62c;
+  background: #e0ad3e;
 }
 
 .green {
-  background: #26e05a;
+  background: #00ecfd;
 }
 
 .procode {
   margin-top: 20px;
-  /* font-size: 1.5em; */
-  font-size: 19.5px;
+  font-size: 16.5px;
   line-height: 25px;
   color: #fefefe;
 }
@@ -159,6 +156,9 @@ body[data-page="home"] .footer{
   display: grid;
   place-items: baseline end;
 }
+
+
+
 
 .introImage{
   position: relative;
@@ -239,7 +239,7 @@ body[data-page="home"] .footer{
 }
 
 .innerCircle .planetCircle{
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .innerCircle .planetCircle:nth-child(1){
@@ -326,8 +326,8 @@ body[data-page="home"] .footer{
 
   .profileImage{
     transform-origin: center;
-    height: 650px;
-    --winWidth: 0.55;
+    height: 500px;
+    --winWidth: 0.35;
     transform: scale(var(--winWidth));
     right: 0;
     place-items: baseline center;
@@ -339,7 +339,7 @@ body[data-page="home"] .footer{
     height: 300px;
     margin: 0;
     transform-origin:top left;
-    transform: scale(0.65);
+    transform: scale(0.55);
     align-self: flex-end;
   }
 

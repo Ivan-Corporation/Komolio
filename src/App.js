@@ -33,13 +33,6 @@ function App() {
   const [card4, setCard4] = React.useState(0)
 
 
-  const [isMobo, setMobo] =  React.useState(()=>{
-    return window.outerWidth<=650;
-  })
-
-  window.addEventListener('resize',()=>{
-    setMobo(window.outerWidth<=650);
-  });
 
   document.body.dataset.page = "home"
 
@@ -84,10 +77,6 @@ function App() {
     "twitter" : "https://twitter.com/KomaHuman"
   }
 
-  const clicked = (altValue)=>{
-    return;
-    window.open(links[altValue], "_blank");
-  }
 
   return (
     <div className="home">
@@ -101,12 +90,8 @@ function App() {
         <div className="profileImage">
           <img className="introImage" src={profileImg} alt="profile"/>
           <div className="ringCircle innerCircle">
-            <img onClick={()=>{
-              clicked("twitter");
-            }} className="planetCircle" src={PythonIcon} alt="twitter"/>
-            <img onClick={()=>{
-              clicked("github");
-            }} className="planetCircle" src={JavaScriptIcon} alt="github"/>
+            <img className="planetCircle" src={PythonIcon} alt="twitter"/>
+            <img className="planetCircle" src={JavaScriptIcon} alt="github"/>
           </div>
           <div className="ringCircle outerCircle">
             <img className="planetCircle" src={ReactIcon} alt=""/>
