@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/Komolio/static/css/main.d5e2cd6b.chunk.css",
-    "main.js": "/Komolio/static/js/main.e45bbf1d.chunk.js",
-    "main.js.map": "/Komolio/static/js/main.e45bbf1d.chunk.js.map",
-    "runtime-main.js": "/Komolio/static/js/runtime-main.00a7aafe.js",
-    "runtime-main.js.map": "/Komolio/static/js/runtime-main.00a7aafe.js.map",
-    "static/js/2.39ff21b4.chunk.js": "/Komolio/static/js/2.39ff21b4.chunk.js",
-    "static/js/2.39ff21b4.chunk.js.map": "/Komolio/static/js/2.39ff21b4.chunk.js.map",
-    "static/js/3.928d58d1.chunk.js": "/Komolio/static/js/3.928d58d1.chunk.js",
-    "static/js/3.928d58d1.chunk.js.map": "/Komolio/static/js/3.928d58d1.chunk.js.map",
+    "main.css": "/Komolio/static/css/main.37c62820.chunk.css",
+    "main.js": "/Komolio/static/js/main.1f4a3b81.chunk.js",
+    "main.js.map": "/Komolio/static/js/main.1f4a3b81.chunk.js.map",
+    "runtime-main.js": "/Komolio/static/js/runtime-main.b89117e9.js",
+    "runtime-main.js.map": "/Komolio/static/js/runtime-main.b89117e9.js.map",
+    "static/js/2.ea3fce84.chunk.js": "/Komolio/static/js/2.ea3fce84.chunk.js",
+    "static/js/2.ea3fce84.chunk.js.map": "/Komolio/static/js/2.ea3fce84.chunk.js.map",
+    "static/js/3.a7bcb929.chunk.js": "/Komolio/static/js/3.a7bcb929.chunk.js",
+    "static/js/3.a7bcb929.chunk.js.map": "/Komolio/static/js/3.a7bcb929.chunk.js.map",
     "index.html": "/Komolio/index.html",
-    "static/css/main.d5e2cd6b.chunk.css.map": "/Komolio/static/css/main.d5e2cd6b.chunk.css.map",
-    "static/js/2.39ff21b4.chunk.js.LICENSE.txt": "/Komolio/static/js/2.39ff21b4.chunk.js.LICENSE.txt",
+    "static/css/main.37c62820.chunk.css.map": "/Komolio/static/css/main.37c62820.chunk.css.map",
+    "static/js/2.ea3fce84.chunk.js.LICENSE.txt": "/Komolio/static/js/2.ea3fce84.chunk.js.LICENSE.txt",
     "static/media/blender.1dfc3098.png": "/Komolio/static/media/blender.1dfc3098.png",
     "static/media/css.ce6e7a44.png": "/Komolio/static/media/css.ce6e7a44.png",
     "static/media/koma.3ca56566.png": "/Komolio/static/media/koma.3ca56566.png",
+    "static/media/komaquiz.8c921b59.png": "/Komolio/static/media/komaquiz.8c921b59.png",
     "static/media/mongo.202e2c9e.png": "/Komolio/static/media/mongo.202e2c9e.png",
+    "static/media/monkey.b98c994f.jpg": "/Komolio/static/media/monkey.b98c994f.jpg",
     "static/media/profile.19726fcf.png": "/Komolio/static/media/profile.19726fcf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.00a7aafe.js",
-    "static/js/2.39ff21b4.chunk.js",
-    "static/css/main.d5e2cd6b.chunk.css",
-    "static/js/main.e45bbf1d.chunk.js"
+    "static/js/runtime-main.b89117e9.js",
+    "static/js/2.ea3fce84.chunk.js",
+    "static/css/main.37c62820.chunk.css",
+    "static/js/main.1f4a3b81.chunk.js"
   ]
 }
