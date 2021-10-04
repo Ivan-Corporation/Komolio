@@ -7,6 +7,7 @@ import './assets/css/projects.css';
 
 import profileImg from './assets/img/profile.png';
 import komaquiz from './assets/img/komaquiz.png';
+import monkey from './assets/img/monkey.jpg';
 
 
 
@@ -124,7 +125,7 @@ function App() {
 
         <a href='https://komaroad.com' class="card 2">
         <div class="card_image">
-          <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+          <img src={monkey} />
           </div>
         <div class="card_title title-white">
           <p>Komaroad</p>
