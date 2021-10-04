@@ -27,9 +27,7 @@ export default function Header(){
         </div>
         <div className="headNav">
           <div className="navList">
-            <span className="navText">
-              <Link to="/">Home</Link>
-            </span>
+            
     
             <span className="navText">
               <a href="https://github.com/Ivan-Corporation" target="_blank" rel="noreferrer">Github</a>
@@ -47,7 +45,7 @@ export default function Header(){
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem><Link to="/">Home</Link></MenuItem>
+            
             <MenuItem>
               <a href="https://github.com/Ivan-Corporation">Github</a>
             </MenuItem>

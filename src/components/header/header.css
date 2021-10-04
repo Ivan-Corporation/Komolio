@@ -75,15 +75,21 @@ a:visited {
   background: var(--background);;
   color: #f9f4f4;
   z-index: 10;
+  margin-top: 22px;
+  
 }
 
 @media only screen and (max-width: 900px) {
+  .logo span {
+    font-size: 1.3em;
+  }
+
   .sideBar {
     display: block;
   }
 
   .headerContainer {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   .navList {

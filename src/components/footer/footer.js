@@ -23,6 +23,7 @@ export default function Footer(){
         <span className="copyrightText">
           Copyright © {Year}. Koma Corporation. All rights reserved
         </span>
+ 
         <div className="socialinks">
           <span>Links:</span>
           <a href="https://github.com/Ivan-Corporation" target="_blank">
@@ -34,7 +35,7 @@ export default function Footer(){
           <a href="https://t.me/KomarIvan" target="_blank">
             <FontAwesomeIcon icon={faTelegram} />
           </a>
-          <a href="https://www.youtube.com/channel/UCWj8NJUnyji2xHHThU1TTsw" target="_blank">
+          <a href="https://www.youtube.com/c/KomarCorporation" target="_blank">
             <FontAwesomeIcon icon={faYoutube} />
           </a>
 

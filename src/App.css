@@ -34,7 +34,7 @@ body[data-page="home"] .footer{
 }
 
 .introCards{
-  margin: 50px 80px;
+  margin: 100px 80px;
   position: relative;
   width: 40%;
   max-height: 100vh;
@@ -85,11 +85,11 @@ body[data-page="home"] .footer{
 }
 
 .yellow {
-  background: #e0ad3e;
+  background: #56b6c2;
 }
 
 .green {
-  background: #00ecfd;
+  background: #96d16b
 }
 
 .procode {
@@ -124,7 +124,7 @@ body[data-page="home"] .footer{
   transform-origin: bottom right;
   box-shadow: none;
   z-index: 12;
-  animation: falldown 1s ease-in-out;
+  animation: falldown 1.7s ease-in-out;
 }
 
 @keyframes falldown {
@@ -134,17 +134,19 @@ body[data-page="home"] .footer{
   }
 
   70%{
-    opacity: 0.5;
+    opacity: 0.4;
   }
 
   90%{
-    opacity: 0;
-    transform: rotateZ(-90deg) scale(0.9);
+    opacity: 0.2;
+    transform: rotateZ(-360deg) scale(0.9);
+    
   }
 
   100%{
-    opacity: 0;
-    transform: rotateZ(-90deg) scale(0);
+    opacity: 0.1;
+    transform: rotateZ(-360deg) scale(0);
+    z-index: 1;
   }
 }
 
@@ -311,7 +313,7 @@ body[data-page="home"] .footer{
   margin-left: 16.5px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1044px) {
   .home{
     height: auto;
     overflow: hidden;
@@ -338,12 +340,35 @@ body[data-page="home"] .footer{
     width: 96%;
     height: 300px;
     margin: 0;
-    transform-origin:top left;
-    transform: scale(0.55);
+    transform: scale(0.59);
     align-self: flex-end;
+    
+    
   }
 
   .procode{
     font-size: 17px;
   }
 }
+
+@media only screen and (max-width: 1044px) {
+  .introCards{
+    padding-right: 70px;
+  }
+}
+
+
+.projectsHeader {
+  margin:0 25% 0 25%;
+  width:50%;
+  padding-bottom: 50px;
+  
+}
+.projectsHeaderText {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  
+}
+
+

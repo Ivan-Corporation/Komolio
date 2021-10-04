@@ -3,8 +3,11 @@ import './App.css';
 
 
 import './assets/css/onedark.css';
+import './assets/css/projects.css';
 
 import profileImg from './assets/img/profile.png';
+import komaquiz from './assets/img/komaquiz.png';
+
 
 
 
@@ -87,6 +90,8 @@ function App() {
           <SocialCard count={2} curState={states[card3]}/>
           <LangCard count={3} curState={states[card4]}/>
         </div>
+
+
         <div className="profileImage">
           <img className="introImage" src={profileImg} alt="profile"/>
           <div className="ringCircle innerCircle">
@@ -104,8 +109,45 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="projectsHeader">
+      <h1 className="projectsHeaderText">Projects</h1>
+      
+
+          <div class="cards-list">
+
+      <a href='https://reverent-shirley-b86f3e.netlify.app/' class="card 1">
+        <div class="card_image"> <img src="https://raw.githubusercontent.com/Ivan-Corporation/Komagram/main/3.png" /> </div>
+        <div class="card_title title-white">
+          <p>Komagram</p>
+        </div>
+      </a>
+
+        <a href='https://komaroad.com' class="card 2">
+        <div class="card_image">
+          <img src="https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg" />
+          </div>
+        <div class="card_title title-white">
+          <p>Komaroad</p>
+        </div>
+      </a>
+
+      <a href="https://play.google.com/store/apps/details?id=komar.corporation.Quiz&hl=en" class="card 3">
+        <div class="card_image">
+          <img src={komaquiz} />
+        </div>
+        <div class="card_title title-white">
+          <p>KomaQuiz</p>
+        </div>
+      </a>
+
+
+      </div>
+
+
+      </div>
       
     </div>
+    
   )
 }
 
