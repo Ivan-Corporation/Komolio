@@ -1,32 +1,47 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Main from './Main';
+import { BrowserRouter } from "react-router-dom";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+// import 'flag-icon-css/css/flag-icon.min.css'
+import FallbackLoading from './FallbackLoading';
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
+ //Localisaton
+ i18n
+ .use(initReactI18next) // passes i18n down to react-i18next
+ .use(LanguageDetector)
+ .use(HttpApi)
+ .init({
+   supportedLngs: ['en','ru','fr','de'],
+   fallbackLng: "en",
+   detection: {
+     order: ['cookie', 'localStorage', 'htmlTag', 'path', 'subdomain'],
+     caches: ['cookie']
+   },
+   backend: {
+    loadPath: '/assets/locales/{{lng}}/translation.json',
+   },
+   
 
-import './index.css';
+ });
 
-if(process.env.NODE_ENV=="development"){
-  require('dotenv').config()
-}
+
+ 
 
 ReactDOM.render(
+  <Suspense fallback={FallbackLoading} >
   <React.StrictMode>
+
     <BrowserRouter>
-      <div className="App">
-        <Header/>
-        <Switch>
-          <Route component={App} />
-        </Switch>
-        <Footer/>
-      </div>
+    <Main />
     </BrowserRouter>
-  </React.StrictMode>,
+
+  </React.StrictMode>
+  </Suspense>,
   document.getElementById('root')
 );
 
-reportWebVitals();
