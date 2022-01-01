@@ -58,6 +58,7 @@ export default function LanguageFlags() {
         right: '0',
         paddingRight: '20px',
         paddingTop: '20px',
+        zIndex: '5'
       }    
       }));
       

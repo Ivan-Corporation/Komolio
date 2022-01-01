@@ -6,6 +6,8 @@ import './assets/css/onedark.css';
 
 import komaquiz from './assets/img/komaquiz.png';
 import monkey from './assets/img/monkey.jpg';
+import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
+import Button from '@material-ui/core/Button';
 
 
 import {
@@ -113,8 +115,7 @@ function App() {
         
       </div>
 
-
-
+      
 
 
 

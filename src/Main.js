@@ -10,7 +10,7 @@ import './assets/css/background/stars.css'
 
 
 
-import { BrowserRouter as Switch,Route} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import LanguageFlags from './components/flags/LanguageFlags';
@@ -26,6 +26,33 @@ import Brightness3Icon from '@material-ui/icons/Brightness3';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@mui/material/Tooltip';
+import Projects from './components/projects/Projects';
+import "react-tiger-transition/styles/main.min.css";
+import { Navigation, Route, Screen, Link, glide, cube } from "react-tiger-transition";
+
+// inject glide styles
+glide({
+  name: 'glide-left'
+});
+glide({
+  name: 'glide-right',
+  direction: 'right'
+});
+
+cube({
+  name: 'cube-left',
+  direction: 'left'
+});
+cube({
+  name: 'cube-right',
+  direction: 'right'
+});
+
+
+// you will need to set the height of  <Navigation /> wrapper,
+// in this case, it is the root node,
+// better to do this on your stylesheet
+document.getElementById("root").style.height = "100vh";
 
 
 export default function Main() {
@@ -62,16 +89,17 @@ toggler: {
   left: '0',
   paddingLeft: '10px',
   paddingTop: '20px',
+  zIndex: '5'
 },
 
 
 }));
 
 
-
-
-
 const classes = useStyles();
+
+
+
 
 
   return (
@@ -89,7 +117,7 @@ const classes = useStyles();
 
                         
                         <LanguageFlags theme={theme}/>
-                       <div className={classes.toggler}>
+                          <div className={classes.toggler}>
                             <Tooltip title={t('click_to_change')} arrow>
                             <DarkModeToggle
                             onChange={setDarkMode}
@@ -101,17 +129,45 @@ const classes = useStyles();
                       </Grid>                                                       
         
           </Container> 
-         <Suspense >
-         <Switch>
-                    
-             <Route exact path="/" component={App}/>
+   
+        
+         <Router>
 
-             {/* <Route exact path='/history' component={History}/>
+    <Navigation>
 
-             <Route exact path='/projects' component={Projects}/>     */}
+      <Route exact path="/">
+ 
+        <Screen>
+                <App/>
 
-        </Switch>
-        </Suspense>
+          <Button>
+          <Link to="/projects" transition='cube-left'>
+            Check out the page A
+          </Link>
+          </Button>
+
+        </Screen>
+      </Route>
+
+      <Route
+        exact path="/projects"
+        screen // shorthand to wrap children with screen
+     >
+       <Projects/>
+       <Button>
+        <Link to="/" transition='cube-right'>
+          Back to home page
+        </Link>
+        </Button>
+      </Route>
+    </Navigation>
+  </Router>
+             {/* 
+              
+              <Route exact path='/history' component={History}/> */}
+
+      
+ 
      
        
       </ThemeProvider>
